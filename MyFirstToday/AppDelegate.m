@@ -16,7 +16,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];  // 取得
+    NSMutableDictionary *defaults = [NSMutableDictionary dictionary];
+
+    [defaults setObject:@"0" forKey:@"key_01"];  // をKEY_Fというキーの初期値は99.99
+
+    [ud registerDefaults:defaults];
+    
     return YES;
 }
 

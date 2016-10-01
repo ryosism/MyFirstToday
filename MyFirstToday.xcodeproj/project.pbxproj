@@ -15,6 +15,10 @@
 		201B930D1D6BE1BD00BD62CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201B930B1D6BE1BD00BD62CE /* LaunchScreen.storyboard */; };
 		201B93181D6BE1BE00BD62CE /* MyFirstTodayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 201B93171D6BE1BE00BD62CE /* MyFirstTodayTests.m */; };
 		201B93231D6BE1BE00BD62CE /* MyFirstTodayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 201B93221D6BE1BE00BD62CE /* MyFirstTodayUITests.m */; };
+		204A93C21D6C04FF00011A6B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204A93C11D6C04FF00011A6B /* NotificationCenter.framework */; };
+		204A93C61D6C050000011A6B /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204A93C51D6C050000011A6B /* TodayViewController.m */; };
+		204A93C91D6C050000011A6B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204A93C71D6C050000011A6B /* MainInterface.storyboard */; };
+		204A93CD1D6C050000011A6B /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 204A93BF1D6C04FF00011A6B /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +36,28 @@
 			remoteGlobalIDString = 201B92F91D6BE1BD00BD62CE;
 			remoteInfo = MyFirstToday;
 		};
+		204A93CB1D6C050000011A6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 201B92F21D6BE1BC00BD62CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 204A93BE1D6C04FF00011A6B;
+			remoteInfo = Widget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		204A93D11D6C050000011A6B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				204A93CD1D6C050000011A6B /* Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		201B92FA1D6BE1BD00BD62CE /* MyFirstToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +76,14 @@
 		201B931E1D6BE1BE00BD62CE /* MyFirstTodayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstTodayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		201B93221D6BE1BE00BD62CE /* MyFirstTodayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFirstTodayUITests.m; sourceTree = "<group>"; };
 		201B93241D6BE1BE00BD62CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		204A93BF1D6C04FF00011A6B /* Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		204A93C11D6C04FF00011A6B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		204A93C41D6C04FF00011A6B /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		204A93C51D6C050000011A6B /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		204A93C81D6C050000011A6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		204A93CA1D6C050000011A6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		204A93D21D6C796D00011A6B /* MyFirstToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MyFirstToday.entitlements; sourceTree = "<group>"; };
+		204A93D31D6C798F00011A6B /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Widget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +108,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		204A93BC1D6C04FF00011A6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204A93C21D6C04FF00011A6B /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +125,8 @@
 				201B92FC1D6BE1BD00BD62CE /* MyFirstToday */,
 				201B93161D6BE1BE00BD62CE /* MyFirstTodayTests */,
 				201B93211D6BE1BE00BD62CE /* MyFirstTodayUITests */,
+				204A93C31D6C04FF00011A6B /* Widget */,
+				204A93C01D6C04FF00011A6B /* Frameworks */,
 				201B92FB1D6BE1BD00BD62CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +137,7 @@
 				201B92FA1D6BE1BD00BD62CE /* MyFirstToday.app */,
 				201B93131D6BE1BE00BD62CE /* MyFirstTodayTests.xctest */,
 				201B931E1D6BE1BE00BD62CE /* MyFirstTodayUITests.xctest */,
+				204A93BF1D6C04FF00011A6B /* Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +145,7 @@
 		201B92FC1D6BE1BD00BD62CE /* MyFirstToday */ = {
 			isa = PBXGroup;
 			children = (
+				204A93D21D6C796D00011A6B /* MyFirstToday.entitlements */,
 				201B93001D6BE1BD00BD62CE /* AppDelegate.h */,
 				201B93011D6BE1BD00BD62CE /* AppDelegate.m */,
 				201B93031D6BE1BD00BD62CE /* ViewController.h */,
@@ -140,6 +185,26 @@
 			path = MyFirstTodayUITests;
 			sourceTree = "<group>";
 		};
+		204A93C01D6C04FF00011A6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				204A93C11D6C04FF00011A6B /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		204A93C31D6C04FF00011A6B /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				204A93D31D6C798F00011A6B /* Widget.entitlements */,
+				204A93C41D6C04FF00011A6B /* TodayViewController.h */,
+				204A93C51D6C050000011A6B /* TodayViewController.m */,
+				204A93C71D6C050000011A6B /* MainInterface.storyboard */,
+				204A93CA1D6C050000011A6B /* Info.plist */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,10 +215,12 @@
 				201B92F61D6BE1BD00BD62CE /* Sources */,
 				201B92F71D6BE1BD00BD62CE /* Frameworks */,
 				201B92F81D6BE1BD00BD62CE /* Resources */,
+				204A93D11D6C050000011A6B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				204A93CC1D6C050000011A6B /* PBXTargetDependency */,
 			);
 			name = MyFirstToday;
 			productName = MyFirstToday;
@@ -196,6 +263,23 @@
 			productReference = 201B931E1D6BE1BE00BD62CE /* MyFirstTodayUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		204A93BE1D6C04FF00011A6B /* Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 204A93D01D6C050000011A6B /* Build configuration list for PBXNativeTarget "Widget" */;
+			buildPhases = (
+				204A93BB1D6C04FF00011A6B /* Sources */,
+				204A93BC1D6C04FF00011A6B /* Frameworks */,
+				204A93BD1D6C04FF00011A6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Widget;
+			productName = Widget;
+			productReference = 204A93BF1D6C04FF00011A6B /* Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +291,12 @@
 				TargetAttributes = {
 					201B92F91D6BE1BD00BD62CE = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WQ6E4DAU7T;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					201B93121D6BE1BE00BD62CE = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -215,6 +305,15 @@
 					201B931D1D6BE1BE00BD62CE = {
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = 201B92F91D6BE1BD00BD62CE;
+					};
+					204A93BE1D6C04FF00011A6B = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WQ6E4DAU7T;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -234,6 +333,7 @@
 				201B92F91D6BE1BD00BD62CE /* MyFirstToday */,
 				201B93121D6BE1BE00BD62CE /* MyFirstTodayTests */,
 				201B931D1D6BE1BE00BD62CE /* MyFirstTodayUITests */,
+				204A93BE1D6C04FF00011A6B /* Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +360,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		204A93BD1D6C04FF00011A6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204A93C91D6C050000011A6B /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +400,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		204A93BB1D6C04FF00011A6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204A93C61D6C050000011A6B /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -304,6 +420,11 @@
 			isa = PBXTargetDependency;
 			target = 201B92F91D6BE1BD00BD62CE /* MyFirstToday */;
 			targetProxy = 201B931F1D6BE1BE00BD62CE /* PBXContainerItemProxy */;
+		};
+		204A93CC1D6C050000011A6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 204A93BE1D6C04FF00011A6B /* Widget */;
+			targetProxy = 204A93CB1D6C050000011A6B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -322,6 +443,14 @@
 				201B930C1D6BE1BD00BD62CE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		204A93C71D6C050000011A6B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				204A93C81D6C050000011A6B /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyFirstToday/MyFirstToday.entitlements;
 				INFOPLIST_FILE = MyFirstToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.MyFirstToday;
@@ -424,6 +554,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyFirstToday/MyFirstToday.entitlements;
 				INFOPLIST_FILE = MyFirstToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.MyFirstToday;
@@ -477,6 +608,30 @@
 			};
 			name = Release;
 		};
+		204A93CE1D6C050000011A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MyFirstToday.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		204A93CF1D6C050000011A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MyFirstToday.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -496,6 +651,7 @@
 				201B93291D6BE1BE00BD62CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		201B932A1D6BE1BE00BD62CE /* Build configuration list for PBXNativeTarget "MyFirstTodayTests" */ = {
 			isa = XCConfigurationList;
@@ -504,12 +660,22 @@
 				201B932C1D6BE1BE00BD62CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		201B932D1D6BE1BE00BD62CE /* Build configuration list for PBXNativeTarget "MyFirstTodayUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				201B932E1D6BE1BE00BD62CE /* Debug */,
 				201B932F1D6BE1BE00BD62CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		204A93D01D6C050000011A6B /* Build configuration list for PBXNativeTarget "Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204A93CE1D6C050000011A6B /* Debug */,
+				204A93CF1D6C050000011A6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

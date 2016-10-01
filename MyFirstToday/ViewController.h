@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UITextField *textbox;
+- (IBAction)buttonpushed:(id)sender;
+
+@property (weak,nonatomic) NSString *gettext;
 
 @end
 
